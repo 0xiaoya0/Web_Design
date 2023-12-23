@@ -1,0 +1,32 @@
+.button {
+    align-self: center;
+    font-size: medium;
+}
+  
+.button-link {
+    background: none;
+    border: none;
+    color:rgb(48, 48, 48);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.button-link:hover  {
+    background-color: none;
+    color: palevioletred;
+}
+  
+.button-normal {
+    background-color: rgb(238, 223, 238);
+    width: 5rem;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+  
+.button-normal:hover {
+    background-color: thistle;
+}
+  

@@ -1,0 +1,72 @@
+.piece__introduction {
+    margin: 0 2rem;
+}
+
+.classic-pieces {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.classic-piece__card {
+    position: relative;
+    overflow: hidden;
+    grid-column: span 12;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.classic-piece__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.classic-piece__info {
+    position: relative;
+    z-index: 1; 
+    text-align: left;
+}
+
+.classic-piece__music {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.classic-piece__era {
+    color: rgb(169, 94, 119);
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.classic-piece__intro {
+    margin-bottom: 0.5rem;
+}
+
+.classic-piece__composer {
+    color: rgb(169, 94, 119);
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.classic-piece__bio {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 60rem) {
+    .classic-piece__card {
+        grid-column: span 6;
+        margin: 0.5rem;
+    }
+}
+

@@ -1,0 +1,98 @@
+.intro {
+    font-weight: normal;
+}
+
+p {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.hint {
+    color: rgb(95, 95, 95);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.sing__introduction {
+    margin: 1rem 3rem;
+}
+
+.accordion {
+    margin: 1rem 3rem;
+    border: 1px solid #dddddd74;
+}
+  
+.accordion__item {
+    border-bottom: 1px solid #dddddd74;
+}
+  
+.accordion__header {
+    background-color: #eeeeeea6;
+    border: none;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+h3 {
+    margin: 0.5rem 1rem;
+    font-family: Georgia, serif;
+    font-size: large;
+}
+  
+.accordion__header:hover {
+    background-color:rgba(184, 184, 184, 0.443);
+}
+  
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ffffffb6;
+    padding: 0 15px;
+}
+  
+.accordion__content.active {
+    max-height: 1000px; 
+    padding: 15px;
+}
+  
+.basic__list, .advanced__list, .health__list, .resource__list {
+    padding-left: 2rem;
+}
+  
+.basic__item, .advanced__item, .health__item, .resource__item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 60rem) {
+    .sing {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    .heroimage--sing {
+        background-image: url('https://images.unsplash.com/photo-1482627988233-7c68311232ea?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2luZyUyMGNob2lyfGVufDB8fDB8fHww');
+        background-size: cover;
+        background-position: center;
+        width: 35%;
+        height: 90vh; 
+    }
+    
+    .sing__content{
+        width: 65%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .accordion__header {
+        transition: background-color 0.3s;
+    }
+
+    .accordion__content {
+        transition: max-height 0.3s;
+    }
+}

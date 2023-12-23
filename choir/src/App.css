@@ -1,0 +1,65 @@
+.skip {
+  position: absolute;
+  top: -1000px;
+  left: 50%;
+  transition: top 0.5s;
+}
+
+.skip:focus {
+  top: 5px;
+}
+
+.dark {
+  background-color: rgba(63, 84, 136, 0.349);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+p {
+  padding: 1rem;
+}
+
+.head {
+  background-color: rgb(230, 224, 223);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  background-color: rgb(206, 191, 185);
+  color: rgb(28, 17, 10);
+  padding: 1rem;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
+}
+
+.header:hover {
+  color: rgb(153, 93, 93);
+}
+
+.theme {
+  background-color: rgb(208, 208, 208);
+  position: absolute;
+  left: 280px;
+  border: none;
+}
+
+.footer {
+  background-color: rgb(206, 191, 185);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,53 @@
+.choir__profile {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.choir__card {
+    grid-column: span 12;
+    display: flex;
+    flex-flow: column;
+    background-color: #ffffffbe;
+    padding: 1rem;
+    margin: 0.5rem 2rem;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.choir__name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.choir__history {
+    color: rgb(169, 94, 119);
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.choir__notable {
+    margin-bottom: 0.5rem;
+}
+
+.choir__button {
+    align-self: center;
+    background-color: rgb(233, 217, 217);
+    color: rgb(60, 60, 60);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.choir__button:hover {
+    background-color: rgb(210, 193, 196);
+}
+
+@media (min-width: 60rem) {
+    .choir__card {
+        grid-column: span 6;
+        margin: 0.5rem;
+    }
+}
+

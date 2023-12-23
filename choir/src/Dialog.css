@@ -1,0 +1,55 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.subscribe label {
+    margin-top: 0.5rem;
+}
+
+.subscribe input {
+    margin-bottom: 0.5rem; 
+    width: 100%; 
+}
+
+.error {
+    color: darkred;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: small;
+}
+
+.two-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.success {
+    color: darkgreen;
+    padding: 0;
+    margin: 1rem;
+    font-size: small;
+}
+
+dialog {
+    border: none;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    z-index: 2000;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  ::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  

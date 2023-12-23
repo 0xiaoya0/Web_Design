@@ -1,0 +1,95 @@
+.introduction {
+    font-family: Georgia, serif;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+h3 {
+    margin: 0.5rem 1rem;
+}
+  
+p {
+    text-align: justify;
+    font-weight: normal;
+}
+
+.heroimage--home {
+    background-image: url('https://images.unsplash.com/photo-1610254449353-5698372fa83b?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+}
+
+.discover ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.discover__title {
+    font-weight: bold;
+}
+
+.discover__item {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.join-us {
+    background: none;
+    border: none;
+    color: rgb(42, 42, 211);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.discover__item-a {
+    background-color:rgba(241, 212, 218, 0.515);
+    margin-right: 4rem;
+}
+
+.discover__item-b {
+    background-color: #f8f8f874;
+    margin-left: 4rem;
+}
+
+.discover__item-a:hover {
+    background-color:rgba(241, 212, 218);
+}
+
+.discover__item-b:hover {
+    background-color: #e8e8e8;
+}
+
+.join {
+    font-size: medium;
+}
+  
+@media (min-width: 60rem) {
+    .discover__list {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .discover__item-a {
+        background-color:rgba(241, 212, 218, 0.515);
+        margin-right: 1rem;
+    }
+    
+    .discover__item-b {
+        background-color: #f8f8f874;
+        margin-left: 1rem;
+    }
+}

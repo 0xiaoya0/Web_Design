@@ -1,0 +1,48 @@
+.image-carousel {
+    position: relative;
+    margin: 2rem;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.carousel__image {
+    width: 100%;
+    flex: 0 0 100%;
+
+}
+
+.carousel__image.active {
+    display: block; 
+}
+
+.carousel__button {
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 50%;
+    border: none;
+    padding: 0.5rem;
+    font-size: xxx-large;
+    cursor: pointer;
+}
+
+.carousel__button--prev {
+    left: 0.5rem;
+}
+
+.carousel__button--next {
+    right: 0.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .carousel__image {
+        transition: opacity 1s ease;
+    }
+
+    .carousel__track {
+        display: flex;
+        transition: transform 1s ease;
+    }
+}
+
+
